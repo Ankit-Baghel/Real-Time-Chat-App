@@ -76,4 +76,3 @@ The **Ankit Baghel Real-Time Chat App** is a full-stack real-time chat applicati
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/your-repository-link.git
-# Snappy - Chat Application
