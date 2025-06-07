@@ -22,6 +22,10 @@ mongoose
     console.log(err.message);
   });
 
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
+
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
@@ -30,7 +34,7 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "http://localhost:3000", // Change to your React app port (typically 3000)
     credentials: true,
   },
 });
